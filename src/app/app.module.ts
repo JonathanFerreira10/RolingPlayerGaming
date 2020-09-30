@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 
 
 const root = [
+ {path: '', redirectTo: 'login', pathMatch: 'full'},
  { path: 'home', component: HomeComponent},
  { path: 'login', component: LoginComponent}
 ];

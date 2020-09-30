@@ -14,7 +14,7 @@ export class AuthService {
   fazerLogin(usuario: Usuario){
     if(usuario.email == 'jonathan@quickfast.com' && usuario.senha == '123'){
       this.usuarioAutenticado = true; 
-      this.router.navigate(['']);
+      this.router.navigate(['home']);
     }else{
       this.usuarioAutenticado = false;
     }
