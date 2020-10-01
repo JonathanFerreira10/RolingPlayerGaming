@@ -1,1 +1,31 @@
-<p>home works!</p>
+<!-- TELA DO ADMIN PARA ADICIONAR USUÁRIOS; -->
+
+<h2>Digite o Email e senha para adicionar participantes</h2>
+<br>
+<form [formGroup] = "usuarioForm">
+<span>Email </span><input type ="text" formControlName = "email" />
+<br>
+<span>Senha </span><input type = "password" formControlName = "senha"/>
+<br>
+<button class ="button" (click) = "incluirUsuario()">Adicionar</button>
+<br>
+
+<!-- AJUSTAR O NOME USUÁRIO QUE FICA APARECENDO TODA VEZ QUE CLICA NO BOTÃO "ADICIONAR" -->
+
+<div *ngFor = "let pessoa of usuario">
+
+<div class = "box">
+    
+</div>
+<h3>Usuários: </h3>
+<div class = "box linha-vertical">
+    <div style="margin-left: 1%; margin-bottom: 2%;">
+        <h4>Email: {{pessoa.email}}</h4>
+        <br>
+        <h4>Senha: {{pessoa.senha}}</h4>
+    </div>  
+</div>
+</div>
+
+<!-- <span>Email </span><input type ="text" [(ngModel)] = "usuario.email" /><br>
+<span>Senha </span><input type = "password" [(ngModel)] = "usuario.senha"/><br> -->

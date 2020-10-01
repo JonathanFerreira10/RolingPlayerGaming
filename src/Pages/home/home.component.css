@@ -1,0 +1,10 @@
+.box{
+    width: 50%; 
+    float: left; 
+    height: 300px; 
+}
+
+.linha-vertical{
+    border-left: 2px solid;
+    box-sizing: border-box; 
+}
