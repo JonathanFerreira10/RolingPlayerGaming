@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Usuario } from '../../app/atributos';
 import { FormControl, FormGroup, ReactiveFormsModule  } from '@angular/forms'; 
+import { AuthService } from './auth.service';
 
 
 @Component({
@@ -30,9 +31,14 @@ incluirUsuario(){
   
 }
 
+voltaTelaDeLogin(){
+  this.authService.voltaTelaDeLogin();
+}
+
 
   constructor(
     private router: Router,
+    private authService: AuthService
   ) {}
 
   ngOnInit(): void {

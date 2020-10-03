@@ -17,6 +17,7 @@ export class AuthService {
       this.router.navigate(['home']);
     }else{
       this.usuarioAutenticado = false;
+      window.alert("Usuário invalido tente novamente")
     }
   }
 }
